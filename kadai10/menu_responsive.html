@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>食堂メニュー - jQuery UI アコーディオン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  
+  <script>
+ 
+  $(function() {
+    $( "#accordion" ).accordion({
+        heightStyle: "content" 
+    });
+  });
+  </script>
+  
+  <style>
+
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        padding: 10px;
+        max-width: 600px; 
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    #accordion {
+        width: 100%; 
+        margin-top: 20px;
+    }
+    
+    #accordion img {
+        max-width: 100%; 
+        height: auto;    
+        display: block;
+        margin: 15px auto;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .menu-price {
+        font-weight: bold;
+        color: #c80000;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #accordion ul {
+        list-style: disc;
+        margin-left: 20px;
+        padding-left: 0;
+    }
+  </style>
+</head>
+<body>
+    <h1>🍜 本日の食堂日替わりメニュー 🍛</h1>
+    
+    <div id="accordion">
+      <h3>🍱 ランチ</h3>
+      <div>
+        <img src="lunch.jpg" alt="エ大ランチ">
+        <div class="menu-price">エ大ランチ 300円</div>
+        <p>唐揚げ（南蛮ソース）とご飯、味噌汁のセットです。バランスの良い定番メニュー。</p>
+      </div>
+      
+      <h3>🍛 カレー</h3>
+      <div>
+        <img src="curry.jpg" alt="チョリソー＆チーズカレー">
+        <div class="menu-price">本日のグルメカレー（チョリソー＆チーズ） 350円</div>
+        <p>スパイシーなチョリソーと濃厚チーズが絡み合う、満足度の高い一品です。</p>
+      </div>
+      
+      <h3>🍜 唐揚げそば・うどん</h3>
+      <div>
+        <img src="karasoba.jpg" alt="唐揚げおろしうどん・そば">
+        <div class="menu-price">唐揚げおろしうどん・そば 300円</div>
+        <p>揚げたて唐揚げとさっぱりおろしで、食欲がない時にもおすすめです。</p>
+        <p>その他の麺類：</p>
+        <ul>
+          <li>かけうどん・そば (250円)</li>
+          <li>カレーうどん・そば (300円)</li>
+        </ul>
+      </div>
+      
+      <h3>🍝 パスタ</h3>
+      <div>
+        <img src="supa.jpg" alt="カルボナーラ">
+        <div class="menu-price">カルボナーラ 300円</div>
+        <p>濃厚なクリームソースが自慢の定番パスタです。</p>
+        <p style="text-align: center; color: red; font-size: 0.9rem;">※スパゲティは、大盛はできません。</p>
+      </div>
+    </div>
+</body>
+</html>
