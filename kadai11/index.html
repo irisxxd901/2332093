@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Wine Bar CIT</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-color: #800020; 
+            --accent-color: #d4af37; 
+        }
+        body {
+            font-family: 'Shippori Mincho', serif;
+            background-color: #fdfcf5;
+            color: #333;
+        }
+        .navbar {
+            background-color: #222 !important;
+            border-bottom: 3px solid var(--accent-color);
+        }
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--main-color);
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 70vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            filter: brightness(0.6); 
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-custom {
+            background-color: var(--main-color);
+            color: white;
+            border-radius: 0;
+        }
+        .btn-custom:hover {
+            background-color: #5a0016;
+            color: white;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 3rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="CIT Logo"> Italian Wine Bar CIT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">TOP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="course.html">COURSE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="access.html">ACCESS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <video class="hero-video" src="images/パスタ.mp4" autoplay loop muted playsinline></video>
+        <div class="container position-relative">
+            <h1 class="display-3 fw-bold mb-3">Wine × Beef × Cheese</h1>
+            <p class="lead mb-4">幸せを呼ぶ、美味しい時間。</p>
+            <a href="#concept" class="btn btn-custom btn-lg px-5">コンセプトを見る</a>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        
+        <section id="campaign" class="text-center mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="mb-4">Special Campaign</h2>
+                    <p>季節限定メニューやお得な情報をチェック！</p>
+                    <img src="images/menu.gif" class="img-fluid rounded border border-warning" alt="キャンペーンアニメーション">
+                </div>
+            </div>
+        </section>
+
+        <section id="concept" class="mb-5">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6">
+                    <h2>Concept</h2>
+                    <h3 class="h4 mb-3">気取らない贅沢を、あなたに。</h3>
+                    <p>ワインの専門家はいません。<br>
+                    自分達が美味しいと思ったワインだけをご用意しております。<br>
+                    都田沼駅より徒歩2分。お仕事帰りや大切なパートナー、<br>
+                    そしてひとり飲みにも様々なシーンにご利用下さい。</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/内装1.jpg" class="img-fluid rounded shadow" alt="店内の様子">
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="text-center mb-5">
+                <h2>5 Kodawari</h2>
+                <p class="text-muted">CITが選ばれる理由</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/こだわり1.jpg" class="card-img-top" alt="日替わりメニュー" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-danger">01. 日替わりメニュー</h5>
+                            <p class="card-text">旬の美味しいお野菜、魚、お肉で美味しい料理を提供しております。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/こだわり2または4.jpg" class="card-img-top" alt="気軽なワイン酒場" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-danger">02. 気軽なワイン酒場</h5>
+                            <p class="card-text">リーズナブルで美味しいアラカルトメニューも豊富です。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/こだわり3コース料理.jpg" class="card-img-top" alt="パーティーコース" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-danger">03. パーティーコース</h5>
+                            <p class="card-text">2980円から3種類。飲み放題付きコースも人気です。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/ワイン3.jpg" class="card-img-top" alt="グラスワイン" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-danger">04. グラスワイン</h5>
+                            <p class="card-text">日替わりグラスワインは580円〜。ボトルも各種ご用意。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/こだわり5 (2).jpg" class="card-img-top" alt="絶品チーズ" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-danger">05. 絶品チーズ</h5>
+                            <p class="card-text">オーナーシェフが厳選した絶品チーズを使ったメニュー。</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4">
+                    <div class="card h-100 bg-light border-warning">
+                        <div class="card-body text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title text-warning fw-bold">News / Campaign</h5>
+                            <p class="card-text">最新のお得な情報は、ページ上部のキャンペーンエリアをチェック！</p>
+                            <a href="#" class="btn btn-outline-warning">詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <h3 class="mb-3" style="font-family: 'Playfair Display', serif;">Italian Wine Bar CIT</h3>
+            <p>〒999-999 奈良氏之市都田沼123<br>TEL: 000-1234-5678</p>
+            <p class="small mt-4">&copy; 2024 Italian Wine Bar CIT. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
